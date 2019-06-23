@@ -52,6 +52,15 @@ public class VehicleTests {
     Assert.assertEquals(act, exp);
 
     }
+    @Test
+    public void testCropDusterIsAFarmVehicle() {
+
+        CropDuster cropDuster = new CropDuster();
+        String exp = "Neeeewwrrrgghh";
+        String act = cropDuster.makeNoise();
+        Assert.assertEquals(act, exp);
+
+    }
 
 
     @Test
@@ -67,7 +76,7 @@ public class VehicleTests {
         act = thisField.getHasBeenFertilized();
 
         Assert.assertEquals(act, exp);
-
+//        Assert.assertNull(null, null);
     }
 
 
@@ -93,7 +102,7 @@ public class VehicleTests {
     // Tractor Tests
 
     @Test
-    public void testTractorIsVehicle() {
+    public void testTractorIsFarmVehicle() {
 
         Tractor tractor = new Tractor();
         String exp = "Vrooom";
