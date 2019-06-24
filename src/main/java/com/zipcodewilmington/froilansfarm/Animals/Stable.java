@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Stable {
-    List<Horse> horses;
+    private List<Horse> horses;
 
     public Stable() {
         this.horses = new ArrayList<>();
@@ -28,4 +28,5 @@ public class Stable {
     public Integer getNumberOfHorses(){
         return horses.size();
     }
+
 }
